@@ -27,7 +27,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Rooms
+                <i className="bi bi-clipboard-check"></i> Rooms
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -39,17 +39,17 @@ const Header = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                <i className="bi bi-gear-fill"></i>
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a className="dropdown-item" href="#">
-                    Add Room
+                    <i className="bi bi-plus-circle"></i> Add Room
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Response Options
+                    <i className="bi bi-list-check"></i> Response Options
                   </a>
                 </li>
                 <li>
@@ -57,7 +57,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Settings
+                    <i className="bi bi-sliders"></i> Settings
                   </a>
                 </li>
               </ul>
