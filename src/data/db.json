@@ -1,0 +1,38 @@
+{
+  "rooms": [
+    {
+      "id": 0,
+      "name": "Name",
+      "roomType": "Room Type",
+      "building": "Building",
+      "floor": "Floor",
+      "area": "Area",
+      "checked": false,
+      "images": []
+    }
+  ],
+  "options": [
+    {
+      "id": 0,
+      "title": "Title",
+      "description": "Description",
+      "type": "Type",
+      "notificationType": "Notification Type",
+      "department": "Department",
+      "recipient": "Recipient",
+      "notes": "Notes",
+      "roomId": 0
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "username": "Username",
+      "email": "Email",
+      "title": "Admin",
+      "isAdmin": true,
+      "userId": "@dmin"
+    }
+  ],
+  "settings": []
+}
