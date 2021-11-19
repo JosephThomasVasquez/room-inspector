@@ -3,8 +3,8 @@ import React from "react";
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+      <div className="container-fluid p-2">
+        <a className="navbar-brand ms-4" href="#">
           Room Inspector
         </a>
         <button
@@ -19,7 +19,7 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Home
@@ -32,7 +32,7 @@ const Header = () => {
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -62,11 +62,8 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
-            </li>
           </ul>
-          <form className="d-flex">
+          <form className="d-flex me-4 mx-2">
             <input
               className="form-control me-2"
               type="search"
