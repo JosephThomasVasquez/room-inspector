@@ -75,12 +75,12 @@
         },
         {
           "id": 1,
-          "name": "Cloud City Cave",
+          "name": "Hay Hollow",
           "roomType": "Conference Room",
           "buildingId": 1,
           "building": "Ranch Avenue",
-          "floor": "34",
-          "area": "Cloud City Neighborhood",
+          "floor": "7",
+          "area": "Old Town Neighborhood",
           "checked": false,
           "occupied": false,
           "images": []

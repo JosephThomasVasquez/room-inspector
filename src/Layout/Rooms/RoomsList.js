@@ -4,6 +4,7 @@ import RoomsCheckList from "./RoomsCheckList";
 const RoomsList = ({ buildings, getBuildings }) => {
   const [rooms, setRooms] = useState([]);
   const [buildingSelected, setBuildingSelected] = useState("");
+  const [responseOptions, setResponseOptions] = useState({});
 
   useEffect(() => {
     console.log("buildings:", buildings);
@@ -12,12 +13,15 @@ const RoomsList = ({ buildings, getBuildings }) => {
 
   const handleSelectBuilding = (buildingId) => {
     setBuildingSelected(buildingId);
+    // console.log(buildings[buildingId].options);
+    setResponseOptions(buildings[buildingId].options);
+
     console.log("buildingId", buildings[buildingId].name);
     setRooms([buildings[buildingId].name, ...buildings[buildingId].rooms]);
   };
 
   const listBuildings = buildings.map((building) => (
-    <a
+    <div
       key={`buildingId-${building.id}`}
       href="#"
       className={`list-group-item list-group-item-action ${
@@ -27,7 +31,7 @@ const RoomsList = ({ buildings, getBuildings }) => {
       onClick={() => handleSelectBuilding(building.id)}
     >
       {building.name}
-    </a>
+    </div>
   ));
 
   return (
@@ -44,14 +48,18 @@ const RoomsList = ({ buildings, getBuildings }) => {
           <h5>{rooms[0]}</h5>
           <div className="list-group">
             {rooms && (
-              <RoomsCheckList building={rooms.buildingId} rooms={rooms} />
+              <RoomsCheckList
+                building={rooms.buildingId}
+                rooms={rooms}
+                responseOptions={responseOptions}
+              />
             )}
           </div>
         </div>
       </div>
       <ul>
-        Rooms
-        <li>{JSON.stringify(buildings)}</li>
+        {/* Rooms
+        <li>{JSON.stringify(buildings)}</li> */}
       </ul>
     </div>
   );

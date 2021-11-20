@@ -3,6 +3,7 @@ import { Routes, Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import RoomList from "./Rooms/RoomsList";
+import ResponseOptions from "./ResponseOptions/ResponseOptionsList";
 
 const Layout = () => {
   const [buildings, setBuildings] = useState([]);
@@ -36,9 +37,19 @@ const Layout = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/rooms-checklist"
+            path="/rooms/checklist"
             element={
               <RoomList buildings={buildings} getBuildings={getBuildings} />
+            }
+          />
+
+          <Route
+            path="/building/response-options"
+            element={
+              <ResponseOptions
+                buildings={buildings}
+                getBuildings={getBuildings}
+              />
             }
           />
         </Routes>

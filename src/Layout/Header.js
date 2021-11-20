@@ -27,7 +27,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item mt-2">
-              <Link to={"/rooms-checklist"} className="nav-link" href="#">
+              <Link to={"/rooms/checklist"} className="nav-link" href="#">
                 <i className="bi bi-clipboard-check"></i> Checklist
               </Link>
             </li>
@@ -49,9 +49,13 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    to={"/building/response-options"}
+                    className="dropdown-item"
+                    href="#"
+                  >
                     <i className="bi bi-list-check"></i> Response Options
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
