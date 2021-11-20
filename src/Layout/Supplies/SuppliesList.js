@@ -27,7 +27,11 @@ const SuppliesList = () => {
           <th scope="row">{index}</th>
           <td>{item.id}</td>
           <td>{item.productName}</td>
-          <td>{item.link}</td>
+          <td>
+            <a href={item.link} target="_blank">
+              {item.link}
+            </a>
+          </td>
           <td>{item.inStock}</td>
           <td>{item.order}</td>
         </tr>
