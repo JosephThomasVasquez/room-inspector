@@ -36,7 +36,7 @@ const Layout = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/rooms"
+            path="/rooms-checklist"
             element={
               <RoomList buildings={buildings} getBuildings={getBuildings} />
             }
