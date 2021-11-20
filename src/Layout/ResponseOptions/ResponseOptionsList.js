@@ -20,6 +20,12 @@ const ResponseOptionsList = ({ buildings, getBuildings }) => {
       <div className="row">
         <h2 className="mb-4">Response Options</h2>
       </div>
+      <div className="row">
+        <div className="col-3">
+          <h5>Buildings</h5>
+          {/* <div className="list-group">{listBuildings}</div> */}
+        </div>
+      </div>
     </div>
   );
 };
