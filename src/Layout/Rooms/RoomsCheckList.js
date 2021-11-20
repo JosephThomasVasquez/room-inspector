@@ -16,8 +16,7 @@ const RoomsCheckList = ({ rooms }) => {
 
   return (
     <div>
-      <h3>{rooms[0]}</h3>
-      {<div className="list-group">{roomsCheckList}</div>}
+      <div className="list-group">{roomsCheckList}</div>
     </div>
   );
 };
