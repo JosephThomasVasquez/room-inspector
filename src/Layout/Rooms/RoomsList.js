@@ -4,7 +4,7 @@ import RoomsCheckList from "./RoomsCheckList";
 const RoomsList = ({ buildings, getBuildings }) => {
   const [rooms, setRooms] = useState([]);
   const [buildingSelected, setBuildingSelected] = useState("");
-  const [responseOptions, setResponseOptions] = useState({});
+  const [responseOptions, setResponseOptions] = useState(null);
 
   useEffect(() => {
     console.log("buildings:", buildings);

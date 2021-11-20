@@ -45,6 +45,50 @@
       "options": [
         {
           "id": 0,
+          "title": "Good!",
+          "description": "Room is checked and everything is neat!",
+          "type": "Presentation",
+          "notificationType": "Room is set and available for use.",
+          "department": "Conference Room Ambassadors",
+          "recipient": "Facilities",
+          "notes": "None",
+          "roomId": 0
+        },
+        {
+          "id": 1,
+          "title": "Lighting Issue",
+          "description": "A light is out or not working.",
+          "type": "Engineering",
+          "notificationType": "Email Ticket",
+          "department": "Facilities",
+          "recipient": "email@domain.com",
+          "notes": "Notes",
+          "roomId": 0
+        },
+        {
+          "id": 2,
+          "title": "Title",
+          "description": "Description",
+          "type": "Type",
+          "notificationType": "Notification Type",
+          "department": "Department",
+          "recipient": "Recipient",
+          "notes": "Notes",
+          "roomId": 0
+        },
+        {
+          "id": 3,
+          "title": "Title",
+          "description": "Description",
+          "type": "Type",
+          "notificationType": "Notification Type",
+          "department": "Department",
+          "recipient": "Recipient",
+          "notes": "Notes",
+          "roomId": 0
+        },
+        {
+          "id": 4,
           "title": "Title",
           "description": "Description",
           "type": "Type",

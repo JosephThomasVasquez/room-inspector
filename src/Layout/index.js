@@ -3,6 +3,8 @@ import { Routes, Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import RoomList from "./Rooms/RoomsList";
+import AddRoom from "./Rooms/AddRoom";
+import EditRoom from "./Rooms/EditRoom";
 import ResponseOptions from "./ResponseOptions/ResponseOptionsList";
 
 const Layout = () => {
@@ -33,7 +35,7 @@ const Layout = () => {
   return (
     <div>
       <Header />
-      <div className="container">
+      <div className="container mt-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
@@ -52,6 +54,10 @@ const Layout = () => {
               />
             }
           />
+
+          <Route path="/rooms/:roomId" element={<Home />} />
+          <Route path="/rooms/:roomId/edit" element={<EditRoom />} />
+          <Route path="/rooms/new" element={<AddRoom />} />
         </Routes>
       </div>
     </div>

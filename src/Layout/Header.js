@@ -44,9 +44,9 @@ const Header = () => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to={"/rooms/new"} className="dropdown-item" href="#">
                     <i className="bi bi-plus-circle"></i> Add Room
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link
