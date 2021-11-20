@@ -11,6 +11,8 @@ import ResponseOptions from "./ResponseOptions/ResponseOptionsList";
 
 const Layout = () => {
   const [buildings, setBuildings] = useState([]);
+  const [buildingSelected, setBuildingSelected] = useState("");
+  const [responseOptions, setResponseOptions] = useState(null);
 
   const controller = new AbortController();
   const { signal } = controller;
@@ -28,6 +30,15 @@ const Layout = () => {
     return () => {
       controller.abort();
     };
+  };
+
+  const handleSelectBuilding = (buildingId) => {
+    setBuildingSelected(buildingId);
+    // console.log(buildings[buildingId].options);
+    setResponseOptions(buildings[buildingId].options);
+
+    console.log("buildingId", buildings[buildingId].name);
+    // setRooms([buildings[buildingId].name, ...buildings[buildingId].rooms]);
   };
 
   useEffect(() => {
@@ -54,6 +65,7 @@ const Layout = () => {
               <ResponseOptions
                 buildings={buildings}
                 getBuildings={getBuildings}
+                handleSelectBuilding={handleSelectBuilding}
               />
             }
           />
@@ -63,7 +75,12 @@ const Layout = () => {
           <Route
             path="/rooms/new"
             element={
-              <AddRoom buildings={buildings} getBuildings={getBuildings} />
+              <AddRoom
+                buildings={buildings}
+                getBuildings={getBuildings}
+                buildingSelected={buildingSelected}
+                handleSelectBuilding={handleSelectBuilding}
+              />
             }
           />
           <Route path="/buildings/new" element={<AddBuilding />} />

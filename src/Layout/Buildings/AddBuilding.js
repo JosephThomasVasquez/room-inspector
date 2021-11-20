@@ -4,7 +4,7 @@ const AddBuilding = () => {
   return (
     <div>
       <div className="row">
-        <h2 className="mb-4">Add Building</h2>
+        <h2 className="text-primary mb-4">Add Building</h2>
       </div>
     </div>
   );

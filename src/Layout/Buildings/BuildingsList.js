@@ -1,21 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-const BuildingsList = ({ buildings, getBuildings }) => {
-  //   const [rooms, setRooms] = useState([]);
-  const [buildingSelected, setBuildingSelected] = useState("");
-  const [responseOptions, setResponseOptions] = useState(null);
-
+const BuildingsList = ({
+  buildings,
+  getBuildings,
+  buildingSelected,
+  handleSelectBuilding,
+}) => {
   useEffect(() => {
     console.log("buildings:", buildings);
     getBuildings();
   }, []);
-
-  const handleSelectBuilding = (buildingId) => {
-    setBuildingSelected(buildingId);
-    setResponseOptions(buildings[buildingId].options);
-    console.log("buildingId", buildings[buildingId]);
-    // setRooms([buildings[buildingId].name, ...buildings[buildingId].rooms]);
-  };
 
   const listBuildings = buildings.map((building) => (
     <div

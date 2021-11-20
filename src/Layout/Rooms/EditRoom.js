@@ -4,7 +4,7 @@ const EditRoom = () => {
   return (
     <div>
       <div className="row">
-        <h2 className="mb-4">Edit Room</h2>
+        <h2 className="text-primary mb-4">Edit Room</h2>
       </div>
     </div>
   );
