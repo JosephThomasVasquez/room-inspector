@@ -19,7 +19,7 @@ const ResponseOptionsList = ({ buildings, getBuildings }) => {
   return (
     <div>
       <div className="row">
-        <h2 className="mb-4">Response Options</h2>
+        <h2 className="text-primary mb-4">Response Options</h2>
       </div>
       <div className="row">
         <div className="col-3">

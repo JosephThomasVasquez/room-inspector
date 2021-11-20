@@ -26,6 +26,14 @@ const SuppliesList = () => {
         <tr>
           <th scope="row">{index}</th>
           <td>{item.id}</td>
+          <td>
+            <img
+              src={item.image}
+              className="img-thumbnail"
+              width="100px"
+              alt="..."
+            />
+          </td>
           <td>{item.productName}</td>
           <td>
             <a href={item.link} target="_blank">
@@ -48,15 +56,16 @@ const SuppliesList = () => {
   return (
     <div>
       <div className="row">
-        <h2 className="mb-4">Supplies List</h2>
+        <h2 className="text-primary mb-4">Supplies List</h2>
       </div>
       <div className="row">
         <div className="col-12">
-          <table className="table">
+          <table className="table table-striped table-hover">
             <thead>
               <tr>
                 <th scope="col">No.</th>
                 <th scope="col">id</th>
+                <th scope="col">Thumbnail</th>
                 <th scope="col">Product Name</th>
                 <th scope="col">Link</th>
                 <th scope="col">In Stock</th>

@@ -12,10 +12,8 @@ const BuildingsList = ({ buildings, getBuildings }) => {
 
   const handleSelectBuilding = (buildingId) => {
     setBuildingSelected(buildingId);
-    // console.log(buildings[buildingId].options);
     setResponseOptions(buildings[buildingId].options);
-
-    console.log("buildingId", buildings[buildingId].name);
+    console.log("buildingId", buildings[buildingId]);
     // setRooms([buildings[buildingId].name, ...buildings[buildingId].rooms]);
   };
 

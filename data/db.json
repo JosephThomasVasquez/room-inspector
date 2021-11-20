@@ -169,42 +169,48 @@
           "productName": "Black Pens",
           "inStock": 100,
           "order": 0,
-          "link": "https://www.OfficeStore.com"
+          "link": "https://www.OfficeStore.com",
+          "image": "https://media.istockphoto.com/photos/school-and-office-accessories-on-wooden-background-picture-id485725200"
         },
         {
           "id": 1,
           "productName": "8.5 x 11 Paper",
           "inStock": 25,
           "order": 0,
-          "link": "https://www.OfficeStore.com"
+          "link": "https://www.OfficeStore.com",
+          "image": "https://media.istockphoto.com/photos/school-and-office-accessories-on-wooden-background-picture-id485725200"
         },
         {
           "id": 2,
           "productName": "Red Fine Point Sharpies",
           "inStock": 82,
           "order": 0,
-          "link": "https://www.OfficeStore.com"
+          "link": "https://www.OfficeStore.com",
+          "image": "https://media.istockphoto.com/photos/school-and-office-accessories-on-wooden-background-picture-id485725200"
         },
         {
           "id": 3,
           "productName": "3 Inch Ring Binders",
           "inStock": 10,
           "order": 0,
-          "link": "https://www.OfficeStore.com"
+          "link": "https://www.OfficeStore.com",
+          "image": "https://media.istockphoto.com/photos/school-and-office-accessories-on-wooden-background-picture-id485725200"
         },
         {
           "id": 4,
           "productName": "Yellow Highlighter",
           "inStock": 45,
           "order": 2,
-          "link": "https://www.OfficeStore.com"
+          "link": "https://www.OfficeStore.com",
+          "image": "https://media.istockphoto.com/photos/school-and-office-accessories-on-wooden-background-picture-id485725200"
         },
         {
           "id": 5,
           "productName": "Post-Its Notepads",
           "inStock": 64,
           "order": 2,
-          "link": "https://www.OfficeStore.com"
+          "link": "https://www.OfficeStore.com",
+          "image": "https://media.istockphoto.com/photos/school-and-office-accessories-on-wooden-background-picture-id485725200"
         }
       ]
     }

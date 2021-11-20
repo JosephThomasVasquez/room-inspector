@@ -60,7 +60,12 @@ const Layout = () => {
 
           <Route path="/rooms/:roomId" element={<Home />} />
           <Route path="/rooms/:roomId/edit" element={<EditRoom />} />
-          <Route path="/rooms/new" element={<AddRoom />} />
+          <Route
+            path="/rooms/new"
+            element={
+              <AddRoom buildings={buildings} getBuildings={getBuildings} />
+            }
+          />
           <Route path="/buildings/new" element={<AddBuilding />} />
         </Routes>
       </div>

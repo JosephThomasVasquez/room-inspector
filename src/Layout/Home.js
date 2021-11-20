@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <div className="row">
-        <h2 className="mb-4">Home</h2>
+        <h2 className="text-primary mb-4">Home</h2>
       </div>
     </div>
   );
