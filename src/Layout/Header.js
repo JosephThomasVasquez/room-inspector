@@ -31,6 +31,11 @@ const Header = () => {
                 <i className="bi bi-clipboard-check"></i> Checklist
               </Link>
             </li>
+            <li className="nav-item mt-2">
+              <Link to={"/supplies/list"} className="nav-link" href="#">
+                <i className="bi bi-basket"></i> Supplies
+              </Link>
+            </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-link"

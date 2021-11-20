@@ -45,7 +45,7 @@ const RoomsCheckList = ({ rooms, responseOptions }) => {
         data-bs-parent="#accordionFlushExample"
       >
         <div className="accordion-body">
-          <ul class="list-group">{options()}</ul>
+          <ul className="list-group">{options()}</ul>
           {/* {JSON.stringify(responseOptions)} */}
         </div>
       </div>
@@ -54,7 +54,7 @@ const RoomsCheckList = ({ rooms, responseOptions }) => {
 
   return (
     <div>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div className="accordion accordion-flush" id="accordionFlushExample">
         {roomsCheckList}
       </div>
       {/* <div className="list-group">{roomsCheckList}</div> */}

@@ -164,9 +164,17 @@
       "username": "Username",
       "email": "Email",
       "title": "Admin",
+      "role": "Administrator",
       "isAdmin": true,
-      "userId": "@dmin"
+      "userId": "@dmin",
+      "currentAssignment": {
+        "lastRoom": "",
+        "roomsChecked": [],
+        "roomsNotChecked": [],
+        "issuesReported": []
+      }
     }
   ],
+  "reports": [],
   "settings": []
 }

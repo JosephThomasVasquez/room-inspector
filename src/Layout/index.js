@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
+import SuppliesList from "./Supplies/SuppliesList";
 import RoomList from "./Rooms/RoomsList";
 import AddBuilding from "./Buildings/AddBuilding";
 import AddRoom from "./Rooms/AddRoom";
@@ -45,6 +46,7 @@ const Layout = () => {
               <RoomList buildings={buildings} getBuildings={getBuildings} />
             }
           />
+          <Route path="/supplies/list" element={<SuppliesList />} />
 
           <Route
             path="/building/response-options"
