@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import BuildingsList from "../Buildings/BuildingsList";
 
 const ResponseOptionsList = ({ buildings, getBuildings }) => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const ResponseOptionsList = ({ buildings, getBuildings }) => {
       <div className="row">
         <div className="col-3">
           <h5>Buildings</h5>
+          <BuildingsList buildings={buildings} getBuildings={getBuildings} />
           {/* <div className="list-group">{listBuildings}</div> */}
         </div>
       </div>
