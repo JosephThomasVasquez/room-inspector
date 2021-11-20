@@ -5,16 +5,17 @@ import Home from "./Home";
 import RoomList from "./Rooms/RoomsList";
 
 const Layout = () => {
-  const [rooms, setRooms] = useState([]);
+  const [buildings, setBuildings] = useState([]);
 
   const controller = new AbortController();
   const { signal } = controller;
 
-  const getRooms = async (signal) => {
+  // get the buildings data from the api
+  const getBuildings = async (signal) => {
     try {
-      const response = await fetch("http://localhost:8000/rooms", signal);
-      // console.log(await response.json());
-      setRooms(await response.json());
+      const response = await fetch("http://localhost:8000/buildings", signal);
+      const data = await response.json();
+      setBuildings(data);
     } catch (error) {
       console.log(error);
     }
@@ -25,7 +26,7 @@ const Layout = () => {
   };
 
   useEffect(() => {
-    getRooms(signal);
+    getBuildings(signal);
   }, []);
 
   return (
@@ -34,7 +35,12 @@ const Layout = () => {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/rooms" element={<RoomList rooms={rooms} />} />
+          <Route
+            path="/rooms"
+            element={
+              <RoomList buildings={buildings} getBuildings={getBuildings} />
+            }
+          />
         </Routes>
       </div>
     </div>

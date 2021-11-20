@@ -1,29 +1,117 @@
 {
-  "rooms": [
+  "buildings": [
     {
       "id": 0,
-      "name": "Name",
-      "roomType": "Room Type",
-      "building": "Building",
-      "floor": "Floor",
-      "area": "Area",
-      "checked": false,
-      "images": []
-    }
-  ],
-  "options": [
+      "name": "Sky Tower 9",
+      "rooms": [
+        {
+          "id": 0,
+          "name": "Name",
+          "roomType": "Room Type",
+          "buildingId": 0,
+          "building": "Sky Tower 9",
+          "floor": "Floor",
+          "area": "Area",
+          "checked": false,
+          "occupied": false,
+          "images": []
+        },
+        {
+          "id": 1,
+          "name": "Cloud City Cave",
+          "roomType": "Conference Room",
+          "buildingId": 0,
+          "building": "Sky Tower 9",
+          "floor": "34",
+          "area": "Cloud City Neighborhood",
+          "checked": false,
+          "occupied": false,
+          "images": []
+        },
+        {
+          "id": 2,
+          "name": "Freddie's Farm",
+          "roomType": "Project Room",
+          "buildingId": 0,
+          "building": "Sky Tower 9",
+          "floor": "3",
+          "area": "Billowing Bluffs",
+          "checked": false,
+          "occupied": false,
+          "images": []
+        }
+      ],
+      "options": [
+        {
+          "id": 0,
+          "title": "Title",
+          "description": "Description",
+          "type": "Type",
+          "notificationType": "Notification Type",
+          "department": "Department",
+          "recipient": "Recipient",
+          "notes": "Notes",
+          "roomId": 0
+        }
+      ]
+    },
     {
-      "id": 0,
-      "title": "Title",
-      "description": "Description",
-      "type": "Type",
-      "notificationType": "Notification Type",
-      "department": "Department",
-      "recipient": "Recipient",
-      "notes": "Notes",
-      "roomId": 0
+      "id": 1,
+      "name": "Ranch Avenue",
+      "rooms": [
+        {
+          "id": 0,
+          "name": "Name",
+          "roomType": "Room Type",
+          "buildingId": 1,
+          "building": "Ranch Avenue",
+          "floor": "Floor",
+          "area": "Area",
+          "checked": false,
+          "occupied": false,
+          "images": []
+        },
+        {
+          "id": 1,
+          "name": "Cloud City Cave",
+          "roomType": "Conference Room",
+          "buildingId": 1,
+          "building": "Ranch Avenue",
+          "floor": "34",
+          "area": "Cloud City Neighborhood",
+          "checked": false,
+          "occupied": false,
+          "images": []
+        },
+        {
+          "id": 2,
+          "name": "Freddie's Farm",
+          "roomType": "Project Room",
+          "buildingId": 1,
+          "building": "Ranch Avenue",
+          "floor": "3",
+          "area": "Billowing Bluffs",
+          "checked": false,
+          "occupied": false,
+          "images": []
+        }
+      ],
+      "options": [
+        {
+          "id": 0,
+          "title": "Title",
+          "description": "Description",
+          "type": "Type",
+          "notificationType": "Notification Type",
+          "department": "Department",
+          "recipient": "Recipient",
+          "notes": "Notes",
+          "roomId": 0
+        }
+      ]
     }
   ],
+
   "users": [
     {
       "id": 0,
