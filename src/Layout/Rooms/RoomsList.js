@@ -44,7 +44,7 @@ const RoomsList = ({ buildings, getBuildings }) => {
           <h5>Buildings</h5>
           <div className="list-group">{listBuildings}</div>
         </div>
-        <div className="col-5">
+        <div className="col-9">
           <h5>{rooms[0]}</h5>
           <div className="list-group">
             {rooms && (

@@ -16,7 +16,7 @@ const RoomsCheckList = ({ rooms, responseOptions }) => {
             value=""
             aria-label="..."
           />
-          {option.title}
+          {option.title} - {option.description}
         </li>
       ));
 

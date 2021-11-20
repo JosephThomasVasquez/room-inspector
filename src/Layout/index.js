@@ -3,6 +3,7 @@ import { Routes, Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import RoomList from "./Rooms/RoomsList";
+import AddBuilding from "./Buildings/AddBuilding";
 import AddRoom from "./Rooms/AddRoom";
 import EditRoom from "./Rooms/EditRoom";
 import ResponseOptions from "./ResponseOptions/ResponseOptionsList";
@@ -58,6 +59,7 @@ const Layout = () => {
           <Route path="/rooms/:roomId" element={<Home />} />
           <Route path="/rooms/:roomId/edit" element={<EditRoom />} />
           <Route path="/rooms/new" element={<AddRoom />} />
+          <Route path="/buildings/new" element={<AddBuilding />} />
         </Routes>
       </div>
     </div>

@@ -67,13 +67,13 @@
         },
         {
           "id": 2,
-          "title": "Title",
-          "description": "Description",
-          "type": "Type",
-          "notificationType": "Notification Type",
-          "department": "Department",
-          "recipient": "Recipient",
-          "notes": "Notes",
+          "title": "Broken Furniture",
+          "description": "A piece of furniture is damaged or not sturdy. It needs to be repaired or put on maintenance.",
+          "type": "Damaged or Needs Maintenance",
+          "notificationType": "Email Ticket",
+          "department": "Facilities",
+          "recipient": "email@domain.com",
+          "notes": "None",
           "roomId": 0
         },
         {

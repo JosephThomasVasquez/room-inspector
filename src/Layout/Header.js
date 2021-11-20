@@ -50,6 +50,15 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
+                    to={"/buildings/new"}
+                    className="dropdown-item"
+                    href="#"
+                  >
+                    <i className="bi bi-plus-circle"></i> Add Building
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to={"/building/response-options"}
                     className="dropdown-item"
                     href="#"
