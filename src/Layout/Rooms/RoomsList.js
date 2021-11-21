@@ -42,7 +42,9 @@ const RoomsList = ({ buildings, getBuildings }) => {
       </div>
       <div className="row">
         <div className="col-3">
-          <h5>Buildings</h5>
+          <h5>
+            <i className="bi bi-building me-1"></i>Buildings
+          </h5>
           <div className="list-group">{listBuildings}</div>
         </div>
         <div className="col-9">

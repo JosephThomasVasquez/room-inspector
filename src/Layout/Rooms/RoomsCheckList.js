@@ -35,6 +35,8 @@ const RoomsCheckList = ({ rooms, responseOptions }) => {
           aria-expanded="true"
           aria-controls={`flush-collapse${index}`}
         >
+          <i className="bi bi-check-circle me-2"></i>
+
           {room.name}
         </button>
       </h2>

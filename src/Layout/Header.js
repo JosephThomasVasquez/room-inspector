@@ -59,7 +59,7 @@ const Header = () => {
                     className="dropdown-item"
                     href="#"
                   >
-                    <i className="bi bi-plus-circle"></i> Add Building
+                    <i className="bi bi-building"></i> Add Building
                   </Link>
                 </li>
                 <li>

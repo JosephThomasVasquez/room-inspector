@@ -17,7 +17,7 @@ const AddRoom = ({
     area: "Area",
     checked: false,
     occupied: false,
-    images: [],
+    image: "",
   };
   const [roomFormData, setRoomFormData] = useState(inititalFormData);
 
@@ -27,6 +27,12 @@ const AddRoom = ({
   }, []);
 
   const handleChange = ({ target }) => {
+    // if (target.name === "image") {
+    //   const addImage = roomFormData.image.push(target.value);
+
+    //   setRoomFormData({ ...roomFormData, addImage });
+    // }
+
     setRoomFormData({ ...roomFormData, [target.name]: target.value });
     console.log(roomFormData);
   };
@@ -115,13 +121,34 @@ const AddRoom = ({
                 onChange={handleChange}
                 value={roomFormData.roomType}
               ></input>
+              <label htmlFor="image" className="h6 my-2">
+                Image
+              </label>
+              <input
+                name="image"
+                id="image"
+                placeholder="image"
+                className="my-2"
+                onChange={handleChange}
+                value={roomFormData.image}
+              ></input>
+              <div>
+                {roomFormData.image && (
+                  <img
+                    name="image"
+                    src={roomFormData.image}
+                    className="img-thumbnail my-2 mb-3 shadow"
+                    width="400px"
+                  />
+                )}
+              </div>
             </div>
-            <div>
-              <button type="submit" className="btn btn-secondary mr-2 my-2">
-                Cancel
-              </button>
-              <button type="submit" className="btn btn-primary my-2">
+            <div className="mt-2">
+              <button type="submit" className="btn btn-primary me-2">
                 Submit
+              </button>
+              <button type="submit" className="btn btn-secondary">
+                Cancel
               </button>
             </div>
           </form>
