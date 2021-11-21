@@ -52,7 +52,8 @@
           "department": "Conference Room Ambassadors",
           "recipient": "Facilities",
           "notes": "None",
-          "roomId": 0
+          "roomId": 0,
+          "checked": true
         },
         {
           "id": 1,
@@ -63,7 +64,8 @@
           "department": "Facilities",
           "recipient": "email@domain.com",
           "notes": "Notes",
-          "roomId": 0
+          "roomId": 0,
+          "checked": false
         },
         {
           "id": 2,
@@ -74,7 +76,8 @@
           "department": "Facilities",
           "recipient": "email@domain.com",
           "notes": "None",
-          "roomId": 0
+          "roomId": 0,
+          "checked": false
         },
         {
           "id": 3,
@@ -85,20 +88,32 @@
           "department": "Department",
           "recipient": "Recipient",
           "notes": "Notes",
-          "roomId": 0
+          "roomId": 0,
+          "checked": false
         },
         {
           "id": 4,
           "title": "Title",
-          "description": "Description",
-          "type": "Type",
+          "notes": "Add notes...",
+          "type": "Notes",
           "notificationType": "Notification Type",
-          "department": "Department",
           "recipient": "Recipient",
-          "notes": "Notes",
-          "roomId": 0
+          "roomId": 0,
+          "checked": false
         }
-      ]
+      ],
+      "notes": {
+        "id": 999,
+        "title": "Notes",
+        "description": "Description",
+        "type": "Type",
+        "notificationType": "Notification Type",
+        "department": "Department",
+        "recipient": "Recipient",
+        "notes": "Notes",
+        "roomId": 0,
+        "checked": false
+      }
     },
     {
       "id": 1,
