@@ -65,6 +65,7 @@ const Layout = () => {
               <ResponseOptions
                 buildings={buildings}
                 getBuildings={getBuildings}
+                buildingSelected={buildingSelected}
                 handleSelectBuilding={handleSelectBuilding}
               />
             }

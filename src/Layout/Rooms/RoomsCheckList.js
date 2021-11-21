@@ -75,15 +75,18 @@ const RoomsCheckList = ({ rooms, responseOptions }) => {
             {options()}
 
             <li className="list-group-item">
-              <label className="row ms-4 mb-2">Notes:</label>
-              <textarea
-                name="notes"
-                rows="3"
-                cols="80"
-                placeholder="Add more information here..."
-                value={notes.notes}
-                onChange={handleNotes}
-              ></textarea>
+              <div className="form-floating">
+                <textarea
+                  id="floatingTextarea"
+                  name="notes"
+                  className="form-control"
+                  placeholder="Add more information here..."
+                  value={notes.notes}
+                  onChange={handleNotes}
+                  placeholder="Leave a comment here"
+                ></textarea>
+                <label for="floatingTextarea">Notes:</label>
+              </div>
             </li>
           </ul>
 

@@ -1,11 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import BuildingsList from "../Buildings/BuildingsList";
 
 const ResponseOptionsList = ({
   buildings,
   getBuildings,
+  buildingSelected,
   handleSelectBuilding,
 }) => {
+  const [optionsList, setOptionsList] = useState();
+
   useEffect(() => {
     console.log("buildings:", buildings);
     getBuildings();
@@ -31,6 +34,7 @@ const ResponseOptionsList = ({
           <BuildingsList
             buildings={buildings}
             getBuildings={getBuildings}
+            buildingSelected={buildingSelected}
             handleSelectBuilding={handleSelectBuilding}
           />
           {/* <div className="list-group">{listBuildings}</div> */}
